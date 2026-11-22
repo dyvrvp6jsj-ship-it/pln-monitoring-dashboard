@@ -1,0 +1,49 @@
+================================================================================
+PANDUAN LENGKAP CARA MENJALANKAN DASHBOARD MONITORING 910 SISTEM KELISTRIKAN PLN
+================================================================================
+
+Folder ini berisi seluruh file Dashboard Monitoring PLN yang siap dijalankan kapan saja 
+tanpa perlu membuka VS Code.
+
+--------------------------------------------------------------------------------
+A. CARA MEMBUKA DASHBOARD DI LAPTOP (OFFLINE / WI-FI LOKAL)
+--------------------------------------------------------------------------------
+1. Buka folder ini di Finder.
+2. Klik 2x (double-click) file:
+   👉 1_JALANKAN_DASHBOARD.command
+
+3. Browser Anda (Safari/Chrome) akan otomatis terbuka dan menampilkan dashboard:
+   • Dari Laptop ini : http://localhost:8080
+   • Dari HP (Wi-Fi sama) : http://[IP-Laptop-Anda]:8080
+
+--------------------------------------------------------------------------------
+B. CARA MEMBUKA AGAR BISA DIAKSES DARI INTERNET / LUAR RUMAH
+--------------------------------------------------------------------------------
+1. Pastikan langkah A di atas sudah berjalan (server menyala).
+2. Di folder ini, klik 2x (double-click) file:
+   👉 2_BUKA_AKSES_INTERNET.command
+
+3. Sebuah jendela Terminal akan muncul dan membuat link resmi Cloudflare:
+   Contoh: https://[nama-acak].trycloudflare.com
+4. Salin link tersebut dan bagikan ke WhatsApp / buka di browser HP Anda.
+   Siapapun di seluruh dunia bisa membukanya dengan kecepatan tinggi!
+
+--------------------------------------------------------------------------------
+C. CARA MENUTUP / MEMATIKAN APLIKASI
+--------------------------------------------------------------------------------
+1. Buka jendela Terminal yang sedang berjalan.
+2. Tekan tombol [Ctrl] + [C] pada keyboard Anda untuk mematikan server.
+3. Tutup jendela Terminal.
+
+--------------------------------------------------------------------------------
+D. FITUR UTAMA DASHBOARD INI
+--------------------------------------------------------------------------------
+1. Peta GIS Leaflet berbasis 62 Titik Koordinat Sumber Asli (tanpa kluster semu).
+2. Filter Lengkap 3 Dimensi:
+   - Jenis Sistem: Semua (910), Interkoneksi (49), Isolated (645), ULD (216).
+   - Jam Operasi: Semua (910), 24 Jam (537), 12 Jam (305), 6 Jam (68).
+   - Fokus Monitoring: ⭐ Interkoneksi 24 Sistem Besar (24) dengan marking peta.
+3. Kualitas Lokasi & Transparansi Koordinat Bersama (termasuk 241 sistem Papua & Merauke).
+4. Asisten Cerdas PLN (Chatbot AI) dengan pemahaman teknis regional dan sistem defisit.
+5. Auto-Kompresi Gzip 93% (Super Cepat & Hemat Kuota).
+================================================================================

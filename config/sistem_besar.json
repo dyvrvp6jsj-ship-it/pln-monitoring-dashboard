@@ -1,0 +1,379 @@
+{
+  "description": "Konfigurasi Resmi 24 Sistem Besar Interkoneksi PLN untuk Fokus Monitoring",
+  "version": "1.0",
+  "status": "configured",
+  "status_message": "24 sistem besar resmi terkonfigurasi",
+  "sistem_besar_ids": [
+    334,
+    466,
+    20,
+    78,
+    1,
+    99,
+    92,
+    45,
+    145,
+    46,
+    17,
+    56,
+    623,
+    19,
+    59,
+    74,
+    87,
+    542,
+    64,
+    22,
+    66,
+    21,
+    62,
+    34
+  ],
+  "target_count": 24,
+  "keterangan": "24 sistem besar resmi yang menjadi fokus monitoring nasional berdasarkan kapasitas pasok interkoneksi di seluruh pulau.",
+  "interkoneksi_candidate_ids": [
+    {
+      "id": 1,
+      "name": "BATAM-BINTAN",
+      "unit": "Z101 - Batam",
+      "dmp_mw": 915.0,
+      "bp_mw": 806.5
+    },
+    {
+      "id": 17,
+      "name": "BINTAN",
+      "unit": "6401 - UID Riau dan Kepulauan Riau",
+      "dmp_mw": 150.6,
+      "bp_mw": 105.67
+    },
+    {
+      "id": 19,
+      "name": "BELITUNG",
+      "unit": "6601 - UIW Bangka Belitung",
+      "dmp_mw": 94.35,
+      "bp_mw": 67.3
+    },
+    {
+      "id": 20,
+      "name": "INTERKONEKSI KALIMANTAN",
+      "unit": "2401 - UIP3B Kalimantan",
+      "dmp_mw": 2178.0,
+      "bp_mw": 2238.2
+    },
+    {
+      "id": 21,
+      "name": "TERNATE - TIDORE",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 41.47,
+      "bp_mw": 51.36
+    },
+    {
+      "id": 22,
+      "name": "Tobelo",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 46.45,
+      "bp_mw": 24.44
+    },
+    {
+      "id": 23,
+      "name": "Jailolo",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 5.59,
+      "bp_mw": 5.18
+    },
+    {
+      "id": 26,
+      "name": "Sofifi",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 9.0,
+      "bp_mw": 7.62
+    },
+    {
+      "id": 27,
+      "name": "MABA-BULI",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 9.7,
+      "bp_mw": 6.04
+    },
+    {
+      "id": 34,
+      "name": "Masohi",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 20.0,
+      "bp_mw": 9.8
+    },
+    {
+      "id": 35,
+      "name": "Bula",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 3.0,
+      "bp_mw": 2.76
+    },
+    {
+      "id": 36,
+      "name": "Daruba",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 5.86,
+      "bp_mw": 5.48
+    },
+    {
+      "id": 37,
+      "name": "Ibu",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 2.09,
+      "bp_mw": 1.53
+    },
+    {
+      "id": 38,
+      "name": "Kairatu",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 4.9,
+      "bp_mw": 4.5
+    },
+    {
+      "id": 39,
+      "name": "Kobisonta",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 0.9,
+      "bp_mw": 0.67
+    },
+    {
+      "id": 40,
+      "name": "Luhu",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 1.32,
+      "bp_mw": 1.66
+    },
+    {
+      "id": 41,
+      "name": "Mako",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 3.57,
+      "bp_mw": 4.99
+    },
+    {
+      "id": 42,
+      "name": "Malifut",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 1.3,
+      "bp_mw": 1.09
+    },
+    {
+      "id": 44,
+      "name": "Subaim",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 2.33,
+      "bp_mw": 1.65
+    },
+    {
+      "id": 45,
+      "name": "Sistem Lombok",
+      "unit": "7701 - UIW Nusa Tenggara Barat",
+      "dmp_mw": 419.17,
+      "bp_mw": 410.15
+    },
+    {
+      "id": 46,
+      "name": "Sistem Tambora",
+      "unit": "7701 - UIW Nusa Tenggara Barat",
+      "dmp_mw": 192.52,
+      "bp_mw": 177.95
+    },
+    {
+      "id": 56,
+      "name": "Jayapura",
+      "unit": "7601 - UIW Papua dan Papua Barat",
+      "dmp_mw": 132.4,
+      "bp_mw": 108.6
+    },
+    {
+      "id": 59,
+      "name": "Sorong",
+      "unit": "7601 - UIW Papua dan Papua Barat",
+      "dmp_mw": 65.33,
+      "bp_mw": 62.75
+    },
+    {
+      "id": 60,
+      "name": "Fak-fak",
+      "unit": "7601 - UIW Papua dan Papua Barat",
+      "dmp_mw": 9.13,
+      "bp_mw": 7.99
+    },
+    {
+      "id": 62,
+      "name": "Biak",
+      "unit": "7601 - UIW Papua dan Papua Barat",
+      "dmp_mw": 32.58,
+      "bp_mw": 18.27
+    },
+    {
+      "id": 64,
+      "name": "Manokwari",
+      "unit": "7601 - UIW Papua dan Papua Barat",
+      "dmp_mw": 50.6,
+      "bp_mw": 41.36
+    },
+    {
+      "id": 66,
+      "name": "Merauke",
+      "unit": "7601 - UIW Papua dan Papua Barat",
+      "dmp_mw": 45.09,
+      "bp_mw": 33.2
+    },
+    {
+      "id": 69,
+      "name": "Sarmi",
+      "unit": "7601 - UIW Papua dan Papua Barat",
+      "dmp_mw": 3.4,
+      "bp_mw": 2.81
+    },
+    {
+      "id": 70,
+      "name": "Teminabuan",
+      "unit": "7601 - UIW Papua dan Papua Barat",
+      "dmp_mw": 6.05,
+      "bp_mw": 4.28
+    },
+    {
+      "id": 74,
+      "name": "Bau-bau",
+      "unit": "2501 - UIP3B Sulawesi",
+      "dmp_mw": 61.05,
+      "bp_mw": 61.96
+    },
+    {
+      "id": 78,
+      "name": "SULBAGSEL",
+      "unit": "2501 - UIP3B Sulawesi",
+      "dmp_mw": 1954.39,
+      "bp_mw": 2221.92
+    },
+    {
+      "id": 87,
+      "name": "Luwuk",
+      "unit": "7301 - UID Sulawesi Utara, Sulawesi Tengah, dan Gorontalo",
+      "dmp_mw": 53.2,
+      "bp_mw": 42.25
+    },
+    {
+      "id": 92,
+      "name": "SulutGo",
+      "unit": "2501 - UIP3B Sulawesi",
+      "dmp_mw": 623.06,
+      "bp_mw": 549.72
+    },
+    {
+      "id": 99,
+      "name": "KHATULISTIWA",
+      "unit": "2401 - UIP3B Kalimantan",
+      "dmp_mw": 663.5,
+      "bp_mw": 680.3
+    },
+    {
+      "id": 127,
+      "name": "Namlea",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 10.55,
+      "bp_mw": 10.03
+    },
+    {
+      "id": 128,
+      "name": "Piru",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 6.3,
+      "bp_mw": 5.32
+    },
+    {
+      "id": 145,
+      "name": "SISTEM TIMOR",
+      "unit": "7801 - UIW Nusa Tenggara Timur",
+      "dmp_mw": 198.91,
+      "bp_mw": 145.11
+    },
+    {
+      "id": 266,
+      "name": "Deiyai",
+      "unit": "7601 - UIW Papua dan Papua Barat",
+      "dmp_mw": 0.0,
+      "bp_mw": 0.0
+    },
+    {
+      "id": 334,
+      "name": "Sistem Jawa Bali",
+      "unit": "3301 - UIP2B Jawa, Madura, dan Bali",
+      "dmp_mw": 38256.0,
+      "bp_mw": 37205.39
+    },
+    {
+      "id": 364,
+      "name": "Bere-Bere",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 0.77,
+      "bp_mw": 0.54
+    },
+    {
+      "id": 401,
+      "name": "Kupang",
+      "unit": "7801 - UIW Nusa Tenggara Timur",
+      "dmp_mw": 0.0,
+      "bp_mw": 0.0
+    },
+    {
+      "id": 466,
+      "name": "SUMATERA",
+      "unit": "3201 - UIP3B Sumatera",
+      "dmp_mw": 9027.84,
+      "bp_mw": 8696.11
+    },
+    {
+      "id": 542,
+      "name": "NIAS",
+      "unit": "6201 - UID Sumatera Utara",
+      "dmp_mw": 52.63,
+      "bp_mw": 51.28
+    },
+    {
+      "id": 623,
+      "name": "SISTEM FLORES",
+      "unit": "7801 - UIW Nusa Tenggara Timur",
+      "dmp_mw": 119.62,
+      "bp_mw": 111.23
+    },
+    {
+      "id": 639,
+      "name": "Morotai",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 0.0,
+      "bp_mw": 0.0
+    },
+    {
+      "id": 782,
+      "name": "Buli",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 0.0,
+      "bp_mw": 0.0
+    },
+    {
+      "id": 813,
+      "name": "Sanana",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 7.42,
+      "bp_mw": 5.92
+    },
+    {
+      "id": 841,
+      "name": "Labuha",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 8.0,
+      "bp_mw": 7.02
+    },
+    {
+      "id": 855,
+      "name": "Weda",
+      "unit": "7501 - UIW Maluku dan Maluku Utara",
+      "dmp_mw": 12.0,
+      "bp_mw": 9.92
+    }
+  ]
+}
