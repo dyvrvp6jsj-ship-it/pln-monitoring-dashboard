@@ -8,6 +8,7 @@ cd "$DIR"
 
 echo "=================================================================="
 echo "🌐 MEMBUKA JALUR AKSES INTERNET PUBLIK (CLOUDFLARE TUNNEL)"
+echo "   Server Regional: Jakarta & Singapura (Ultra Fast, Anti-Lag)"
 echo "=================================================================="
 echo ""
 
@@ -37,12 +38,12 @@ if [ -z "$CF_BIN" ]; then
     rm -f /tmp/cf.tgz
 fi
 
-echo "Sedang menghubungkan ke Cloudflare Edge Network..."
-echo "Tautan (Link) publik HTTPS akan segera muncul di bawah ini."
-echo "Salin link tersebut untuk dibuka di HP atau dibagikan ke rekan kerja/atasan."
+echo "Sedang menghubungkan ke Cloudflare Edge Network (Data Center Jakarta)..."
+echo "Tautan (Link) publik HTTPS yang berakhiran '.trycloudflare.com' akan muncul di bawah."
+echo "Salin link tersebut untuk dibuka di HP luar rumah atau dibagikan ke WhatsApp."
 echo ""
-echo "Tekan [Ctrl + C] pada keyboard untuk menghentikan akses internet."
+echo "Tekan [Ctrl + C] pada keyboard jika ingin menghentikan akses internet."
 echo "=================================================================="
 echo ""
 
-"$CF_BIN" tunnel --protocol http2 --url http://localhost:8080
+"$CF_BIN" tunnel --protocol http2 --edge-ip-version 4 --url http://localhost:8080
