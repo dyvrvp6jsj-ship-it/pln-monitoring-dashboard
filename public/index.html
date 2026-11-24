@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Realtime Monitoring 910 Sistem Kelistrikan Nasional PLN</title>
-  <link rel="icon" type="image/png" href="/logo_pln.png" />
-  <link rel="apple-touch-icon" href="/logo_pln.png" />
+  <link rel="icon" type="image/png" href="logo_pln.png" />
+  <link rel="apple-touch-icon" href="logo_pln.png" />
   <!-- Leaflet GIS Real Map Assets (Offline Local) -->
-  <link rel="stylesheet" href="/leaflet/leaflet.css" />
-  <script src="/leaflet/leaflet.js"></script>
-  <script src="/indonesia_map_paths.js"></script>
+  <link rel="stylesheet" href="leaflet/leaflet.css" />
+  <script src="leaflet/leaflet.js"></script>
+  <script src="indonesia_map_paths.js"></script>
   <style>
     :root {
       --pln-blue: #002E62;
@@ -2442,7 +2442,7 @@
   <header>
     <div class="brand-section">
       <div class="pln-logo-box" title="PT PLN (Persero)">
-        <img src="/logo_pln.png" alt="Logo Resmi PLN" class="pln-logo-img">
+        <img src="logo_pln.png" alt="Logo Resmi PLN" class="pln-logo-img">
       </div>
       <div class="brand-text">
         <h1>
@@ -3432,7 +3432,7 @@
     <div class="chatbot-header">
       <div class="chatbot-header-info">
         <div class="chatbot-avatar" style="background:#FFFFFF; padding:2px; display:flex; align-items:center; justify-content:center; border-radius:8px; border:1px solid rgba(253,185,19,0.5);">
-          <img src="/logo_pln.png" alt="PLN" style="width:100%; height:100%; object-fit:contain;">
+          <img src="logo_pln.png" alt="PLN" style="width:100%; height:100%; object-fit:contain;">
         </div>
         <div>
           <div class="chatbot-title">
@@ -3662,6 +3662,11 @@
     }
 
     async function loadData(isRefresh = false) {
+      if (window.INITIAL_DATA && window.INITIAL_DATA.systems && !isRefresh) {
+        appData = window.INITIAL_DATA;
+        renderDashboard(appData);
+        return;
+      }
       try {
         const endpoint = isRefresh ? '/api/refresh' : '/api/data';
         const res = await fetch(endpoint, { method: isRefresh ? 'POST' : 'GET' });
@@ -3674,7 +3679,12 @@
           if (isRefresh) showToast("Data 910 sistem berhasil disinkronkan!");
         }
       } catch (err) {
-        showToast("Gagal memuat data: " + err.message, true);
+        if (window.INITIAL_DATA && window.INITIAL_DATA.systems) {
+          appData = window.INITIAL_DATA;
+          renderDashboard(appData);
+        } else {
+          showToast("Gagal memuat data: " + err.message, true);
+        }
       }
     }
 
@@ -5587,7 +5597,7 @@
         <div class="report-page" id="reportPage1">
           <div class="print-kop-header">
             <div class="print-kop-left">
-              <img src="/logo_pln.png" alt="PLN" class="print-pln-logo">
+              <img src="logo_pln.png" alt="PLN" class="print-pln-logo">
               <div class="print-kop-titles">
                 <h2>PT PLN (PERSERO)</h2>
                 <p>DIREKTORAT MANAJEMEN PEMBANGKITAN &amp; SISTEM KELISTRIKAN NASIONAL</p>
@@ -5711,7 +5721,7 @@
         <div class="report-page" id="reportPage2">
           <div class="print-kop-header">
             <div class="print-kop-left">
-              <img src="/logo_pln.png" alt="PLN" class="print-pln-logo">
+              <img src="logo_pln.png" alt="PLN" class="print-pln-logo">
               <div class="print-kop-titles">
                 <h2>PT PLN (PERSERO)</h2>
                 <p>ANALITIK REGIONAL, KOMPOSISI JENIS SISTEM &amp; POLA OPERASI</p>
@@ -5758,7 +5768,7 @@
         <div class="report-page" id="reportPage3">
           <div class="print-kop-header">
             <div class="print-kop-left">
-              <img src="/logo_pln.png" alt="PLN" class="print-pln-logo">
+              <img src="logo_pln.png" alt="PLN" class="print-pln-logo">
               <div class="print-kop-titles">
                 <h2>PT PLN (PERSERO)</h2>
                 <p>MATRIKS KONSOLIDASI PROVINSI &amp; DAFTAR AKSI PRIORITAS DEFISIT</p>
@@ -6097,7 +6107,7 @@
         <div class="report-page" id="reportPageAppendix">
           <div class="print-kop-header">
             <div class="print-kop-left">
-              <img src="/logo_pln.png" alt="PLN" class="print-pln-logo">
+              <img src="logo_pln.png" alt="PLN" class="print-pln-logo">
               <div class="print-kop-titles">
                 <h2>PT PLN (PERSERO)</h2>
                 <p>BAB 4 (LAMPIRAN): REKAPITULASI STATUS OPERASIONAL 910 SISTEM KELISTRIKAN NASIONAL</p>
@@ -6178,7 +6188,7 @@
   <div id="mobileMenuDrawer" class="mobile-menu-drawer">
     <div class="mobile-drawer-header">
       <div style="display:flex; align-items:center; gap:8px;">
-        <img src="/logo_pln.png" alt="PLN" style="width:24px; height:30px; object-fit:contain;">
+        <img src="logo_pln.png" alt="PLN" style="width:24px; height:30px; object-fit:contain;">
         <span style="font-weight:800; font-size:13.5px; color:var(--text-main);">Navigasi Dashboard PLN</span>
       </div>
       <button class="btn btn-icon" onclick="toggleMobileMenu()">✕</button>
